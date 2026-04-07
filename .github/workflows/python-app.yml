@@ -15,5 +15,5 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          python -m unittest discover -s tests -p 'test_*.py'
+          python coverage run -m unittest discover -s tests -p 'test_*.py'
           coverage report -m
